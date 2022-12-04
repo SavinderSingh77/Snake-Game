@@ -1,22 +1,28 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Fjalla+One&family=Noto+Sans+Chakma&display=swap');
+
+*{
   padding: 0;
   margin: 0;
 }
 
 body {
+  background-image: linear-gradient(toright, #DECBA4, #3E5151);
+  background-size: cover;
   padding: 0;
   margin: 0;
   height: 100vh;
-  background:rgb(245, 245, 245);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
   width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  font-family: 'Segoe UI';
+  background: #606c88;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+ 
 }
 
 #board {
@@ -97,7 +103,62 @@ h3 {
   color: navy;
   padding: 10px;
 }
+footer{
+  margin-top: 19px;
+  height:65px;
+  width:100%;
+  background-color:#d1d8e0;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  gap:65px;
+ 
+}
 
+
+.profile-pic{
+  background-image: url("./images/profile-pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* border: 2px solid black; */
+}
+
+.profile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  
+}
+.profile-container p{
+  font-family: 'Baloo Bhai 2';
+  font-weight: bold;
+  color:rgb(61, 59, 59);
+}
+
+.profile-container p:hover{
+  color:rgb(36, 36, 36)
+}
+.social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:25px;
+}
+svg{
+  height:40px;
+ 
+}
+
+svg:hover{
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+}
 @media only screen and (max-width: 800px) {
   .container{
     display: grid;
